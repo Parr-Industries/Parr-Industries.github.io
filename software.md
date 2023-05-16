@@ -32,3 +32,6 @@ Some important ones:
 * `/etc/cron.d/mysql_backup` - this keeps a daily, hourly, and even sub-hourly backup of the database
 * `/etc/cron.d/apache_alert` - alerts when apache2 stops running, if this alerts then the website is down
 * `/etc/cron.d/disk_space_alert` - alerts when the disk is below 10% free
+
+### DNS
+For DNS we use [Google Domains](https://domains.google.com). Each site should have an `A record` that points to the external IP address of the server and a `CNAME record` for `www` that points to the domain name (ie. dpsite.net). Apache handles all routing once the request makes it to our server, via the `A record`.

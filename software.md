@@ -37,7 +37,7 @@ Some important ones:
 For DNS we use [Google Domains](https://domains.google.com). Each site should have an `A record` that points to the external IP address of the server and a `CNAME record` for `www` that points to the domain name (ie. dpsite.net). Apache handles all routing once the request makes it to our server, via the `A record`.
 
 ### Python and APIs
-For various tooling, scripts, as well as our APIs we use Python. We run version 3.7.3. The APIs are served using [WSGI](https://wsgi.readthedocs.io/en/latest/what.html) via the [mod_wsgi](https://modwsgi.readthedocs.io/en/master/) module for Apache. The APIs are written using the [Flask](https://flask.palletsprojects.com/en/2.3.x/) framework. Below are the installed packages and versions. These can also be found in [GitHub](https://github.com/Parr-Industries/system) and at `/home/emory/requirements.txt` and can be reinstalled by running `pip3 install -r /home/emory/requirements.txt`. 
+For various tooling, scripts, as well as our APIs we use Python. We run version 3.7.3. The APIs are served using [WSGI](https://wsgi.readthedocs.io/en/latest/what.html) via the [mod_wsgi](https://modwsgi.readthedocs.io/en/master/) module for Apache. The APIs are written using the [Flask](https://flask.palletsprojects.com/en/2.3.x/) framework. Below are the installed packages and versions. These can also be found in [GitHub](https://github.com/Parr-Industries/system) and at `/home/emory/requirements.txt` and can be reinstalled by running `pip3 install -r /home/emory/requirements.txt`. Config files for the APIs can be found in `/etc` and example can also be found in [GitHub](https://github.com/Parr-Industries/system). 
 ```
 2to3==1.0
 aiohttp==3.6.2
